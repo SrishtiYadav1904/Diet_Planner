@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary - Diet Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/logo.png" alt="Logo" style="height:40px;">
+            <h1>Diet Planner</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="summary.html" class="active">Summary</a></li>
+                <li><a href="#">Chat Bot</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding:20px; text-align:center;">
+        <h2>BMI Calculator</h2>
+        <p>Enter your height and weight to calculate your BMI:</p>
+
+        <div style="max-width:400px; margin:auto; background:#f9f9f9; padding:20px; border-radius:10px;">
+            <label>Height (cm):</label><br>
+            <input type="number" id="bmiHeight" placeholder="Enter height" /><br><br>
+
+            <label>Weight (kg):</label><br>
+            <input type="number" id="bmiWeight" placeholder="Enter weight" /><br><br>
+
+            <button onclick="calculateBMI()" style="background:#4CAF50; color:white; padding:10px 15px; border:none; border-radius:5px;">
+                Calculate BMI
+            </button>
+
+            <div id="bmiResult" style="margin-top:15px; font-size:18px; font-weight:bold;"></div>
+        </div>
+    </main>
+    <script src="summary.js"></script>
+</body>
+
+</html>

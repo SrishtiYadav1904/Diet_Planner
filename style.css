@@ -1,0 +1,191 @@
+/* External CSS (Blue for Customized Plan) */
+
+#customized-title {
+    color: blue;
+}
+
+
+/* Global Styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f4ea;
+    /* Light green background */
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #4caf50;
+    /* Healthy green */
+    color: white;
+}
+
+header .logo-title {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-title img {
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4f8d4;
+}
+
+
+/* Layout */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+.left,
+.middle,
+.right {
+    flex: 1;
+    min-width: 280px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Success Stories & Reviews */
+
+.left h2 {
+    color: #388e3c;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.review-card {
+    display: flex;
+    align-items: flex-start;
+    background: #f0fdf4;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.stars {
+    color: #ffb400;
+    /* Golden stars */
+    font-size: 1.1rem;
+    margin-top: 4px;
+}
+
+.long-story {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+
+/* Quote Section */
+
+.quote-section img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+blockquote {
+    font-size: 1.2rem;
+    color: #388e3c;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* Customized Plan */
+
+section {
+    margin-top: 20px;
+}
+
+section form input[type="number"] {
+    width: 90%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Button Styling */
+
+button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #388e3c;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #d4f8d4;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
