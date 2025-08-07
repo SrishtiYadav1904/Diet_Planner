@@ -56,100 +56,123 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Left Column: Success Stories & Website Reviews -->
-        <div class="left">
-            <h2>Success Stories & Reviews</h2>
-
-            <!-- User Stories -->
-            <div class="review-card">
-                <img src="https://via.placeholder.com/50" alt="User" class="review-img">
-                <div>
-                    <p><strong>Alex</strong> – “I lost 10kg in 3 months with this plan!”</p>
-                    <p class="long-story">I always struggled to stick to a diet. This app provided a personalized plan that was easy to follow and had healthy recipes. Today, I feel more confident than ever!</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <img src="https://via.placeholder.com/50" alt="User" class="review-img">
-                <div>
-                    <p><strong>Sam</strong> – “Gained healthy muscle weight!”</p>
-                    <p class="long-story">The app helped me track my calorie intake and recommended exercises. In 6 months, I achieved my goal of gaining lean muscle without unhealthy bulking.</p>
-                    <div class="stars">⭐⭐⭐⭐</div>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <img src="https://via.placeholder.com/50" alt="User" class="review-img">
-                <div>
-                    <p><strong>Priya</strong> – “Perfect diet guidance for me.”</p>
-                    <p class="long-story">I needed a gluten-free diet, and this app gave me amazing options. The meal plans are easy to cook, and I never feel like I'm on a 'diet' anymore!</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                </div>
-            </div>
-
-            <!-- Website Reviews -->
-            <h2>Website Reviews</h2>
-            <div class="review-card">
-                <img src="https://via.placeholder.com/50" alt="Reviewer" class="review-img">
-                <div>
-                    <p><strong>Kavita</strong> – “Beautiful UI and easy to use!”</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                </div>
-            </div>
-            <div class="review-card">
-                <img src="https://via.placeholder.com/50" alt="Reviewer" class="review-img">
-                <div>
-                    <p><strong>Rahul</strong> – “Helpful features like calorie generator and diet tips.”</p>
-                    <div class="stars">⭐⭐⭐⭐</div>
-                </div>
-            </div>
+    <div class="middle">
+        <div id="greeting" style="font-size: 24px; font-weight: bold; text-align:center; margin-bottom:10px;"></div>
+        <!-- Motivational Quote -->
+        <div class="quote-section">
+            <img src="https://via.placeholder.com/400x150" alt="Motivation">
+            <blockquote>"Your body is your temple, take care of it."</blockquote>
         </div>
 
-        <!-- Middle Column -->
-        <!-- Middle Column -->
+        <!-- Customized Plan -->
+        <section>
+            <h2 id="customized-title" style="color:green;">Customized Plan</h2>
+            <!-- Inline CSS: Green -->
+            <form id="dietForm">
+                <!-- Preferred Diet Selection with Icons -->
+                <section class="diet-selection">
+                    <h3>Preferred Diet</h3>
+                    <div class="diet-options">
+                        <label class="diet-option">
+            <input type="radio" name="diet" value="Anything">
+            <img src="./image/nonveg.jpg" alt="Anything">
+            <span>Anything</span>
+        </label>
+                        <label class="diet-option">
+            <input type="radio" name="diet" value="Keto">
+            <img src="./image/keto.jpg" alt="Keto">
+            <span>Keto</span>
+        </label>
+                        <label class="diet-option">
+            <input type="radio" name="diet" value="gluten free">
+            <img src="./image/glutenfree.jpg" alt="gluten free">
+            <span>Gluten free</span>
+        </label>
+
+                        <label class="diet-option">
+            <input type="radio" name="diet" value="Vegan">
+            <img src="./image/vegan.jpg" alt="Vegan">
+            <span>Vegan</span>
+        </label>
+                        <label class="diet-option">
+            <input type="radio" name="diet" value="Vegetarian">
+            <img src="./image/veg.jpg" alt="Vegetarian">
+            <span>Vegetarian</span>
+        </label>
+                    </div>
+                </section>
 
 
-        <div class="middle">
-            <div id="greeting" style="font-size: 24px; font-weight: bold; text-align:center; margin-bottom:10px;"></div>
-            <!-- Motivational Quote -->
-            <div class="quote-section">
-                <img src="https://via.placeholder.com/400x150" alt="Motivation">
-                <blockquote>"Your body is your temple, take care of it."</blockquote>
-            </div>
+                <label>Height (cm):</label><input type="number" id="height" required><br><br>
+                <label>Current Weight (kg):</label><input type="number" id="weight" required><br><br>
+                <label>Goal Weight (kg):</label><input type="number" id="goal" required><br><br>
 
-            <!-- Customized Plan -->
-            <section>
-                <h2 id="customized-title" style="color:green;">Customized Plan</h2>
-                <!-- Inline CSS: Green -->
-                <form id="dietForm">
-                    <label><input type="checkbox" name="diet" value="Vegan"> Vegan</label><br>
-                    <label><input type="checkbox" name="diet" value="Gluten-Free"> Gluten-Free</label><br>
-                    <label><input type="checkbox" name="diet" value="Veg"> Veg</label><br>
-                    <label><input type="checkbox" name="diet" value="Non-Veg"> Non-Veg</label><br><br>
-
-                    <label>Height (cm):</label><input type="number" id="height" required><br><br>
-                    <label>Current Weight (kg):</label><input type="number" id="weight" required><br><br>
-                    <label>Goal Weight (kg):</label><input type="number" id="goal" required><br><br>
-
-                    <button type="button" onclick="generateCalories()">Generate Calorie Limit</button>
-                </form>
-                <p id="result"></p>
-            </section>
-        </div>
-
-        <!-- Right Column -->
-        <div class="right">
-            <h2>Diet Tips</h2>
-            <iframe src="https://www.youtube.com/embed/7xGXa8cGm2U" title="Diet Tips"></iframe>
-            <h2>Exercise Videos</h2>
-            <iframe src="https://www.youtube.com/embed/UItWltVZZmE" title="Exercise"></iframe>
-            <h2>Healthy Recipes</h2>
-            <iframe src="https://www.youtube.com/embed/4zG4TG6AQa0" title="Recipes"></iframe>
-        </div>
+                <button type="button" onclick="generateCalories()">Generate Calorie Limit</button>
+            </form>
+            <p id="result"></p>
+        </section>
     </div>
+
+    <!-- Right Column -->
+    <div class="right">
+        <h2>Diet Tips</h2>
+        <iframe src="https://www.youtube.com/embed/7xGXa8cGm2U" title="Diet Tips"></iframe>
+        <h2>Exercise Videos</h2>
+        <iframe src="https://www.youtube.com/embed/UItWltVZZmE" title="Exercise"></iframe>
+        <h2>Healthy Recipes</h2>
+        <iframe src="https://www.youtube.com/embed/4zG4TG6AQa0" title="Recipes"></iframe>
+    </div>
+    </div>
+    <!-- Review Section -->
+    <!-- Review Section (Now above footer) -->
+    <section class="review-section">
+        <h2>Success Stories & Reviews</h2>
+
+        <!-- User Stories -->
+        <div class="review-card">
+            <img src="https://via.placeholder.com/50" alt="User" class="review-img">
+            <div>
+                <p><strong>Alex</strong> – “I lost 10kg in 3 months with this plan!”</p>
+                <p class="long-story">I always struggled to stick to a diet. This app provided a personalized plan that was easy to follow and had healthy recipes. Today, I feel more confident than ever!</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <img src="https://via.placeholder.com/50" alt="User" class="review-img">
+            <div>
+                <p><strong>Sam</strong> – “Gained healthy muscle weight!”</p>
+                <p class="long-story">The app helped me track my calorie intake and recommended exercises. In 6 months, I achieved my goal of gaining lean muscle without unhealthy bulking.</p>
+                <div class="stars">⭐⭐⭐⭐</div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <img src="https://via.placeholder.com/50" alt="User" class="review-img">
+            <div>
+                <p><strong>Priya</strong> – “Perfect diet guidance for me.”</p>
+                <p class="long-story">I needed a gluten-free diet, and this app gave me amazing options. The meal plans are easy to cook, and I never feel like I'm on a 'diet' anymore!</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+
+        <!-- Website Reviews -->
+        <h2 style="margin-top: 30px;">Website Reviews</h2>
+        <div class="review-card">
+            <img src="https://via.placeholder.com/50" alt="Reviewer" class="review-img">
+            <div>
+                <p><strong>Kavita</strong> – “Beautiful UI and easy to use!”</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="review-card">
+            <img src="https://via.placeholder.com/50" alt="Reviewer" class="review-img">
+            <div>
+                <p><strong>Rahul</strong> – “Helpful features like calorie generator and diet tips.”</p>
+                <div class="stars">⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
